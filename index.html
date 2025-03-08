@@ -42,30 +42,20 @@
             </ul>
         </div>
 
-        <div class="navigation">
-            <ul>
-                <!-- <li>
-                    <a href="">
-                        <span class="fa fa-home"></span>
-                        <span>Create Playlist</span>
-                    </a>
-                </li> -->
-                <!-- <li>
-                    <a href="">
-                        <span class="fa fa-search"></span>
-                        <span>Liked Songs</span>
-                    </a>
-                </li> -->
-            </ul>
+
+
+        <div id="authSection" class="text-center mt-5">
+            <p class="welcome-msg">Please click on Signup or Login to continue.</p>
         </div>
-
-
-        <li class="now-playing">
+        
+        <li class="now-playing" id="playerSection" style="display: none;">
             <div class="container mt-5">
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Now Playing</h5>
-                        <p class="card-text">Artist - Song Title</p>
+                        <p class="card-text" id="songInfo">
+                            <span id="songName"></span> - <span id="artistName"></span>
+                        </p>
                         <div class="progress mb-3">
                             <div class="progress-bar" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
@@ -83,8 +73,40 @@
             </div>
         </li>
 
+
+
+
+        <div class="">
+            <ul>
+                 <li>
+                    <div class="footer-nav">
+                        <div class="footer-links-nav">
+                            <a href="#">Legal</a>
+                            <a href="#">Safety & Privacy Center</a>
+                            <a href="#">Privacy Policy</a>
+                        </div>
+                        <div class="footer-links-nav">
+                            <a href="#">Cookies</a>
+                            <a href="#">About Ads</a>
+                            <a href="#">Accessibility</a>
+                        </div>
+                        <div class="footer-links-nav">
+                            <a href="#">Cookies</a>
+                        </div>
+                        <div class="language">
+                            <button class="language-button">English</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </div>
     
+
+
+
+
+
 
     <div class="main-container">
         <div class="topbar">
@@ -306,6 +328,53 @@
             </div>
 
             <hr>
+
+        <div class="footer-1">
+            <div class="footer-column-1">
+                <h4>Company</h4>
+                <ul>
+                    <li>About</li>
+                    <li>Jobs</li>
+                    <li>For the Record</li>
+                </ul>
+            </div>
+            <div class="footer-column-1">
+                <h4>Communities</h4>
+                <ul>
+                    <li>For Artists</li>
+                    <li>Developers</li>
+                    <li>Advertising</li>
+                    <li>Investors</li>
+                    <li>Vendors</li>
+                </ul>
+            </div>
+            <div class="footer-column-1">
+                <h4>Useful links</h4>
+                <ul>
+                    <li>Support</li>
+                    <li>Free Mobile App</li>
+                </ul>
+            </div>
+            <div class="footer-column-1">
+                <h4>Spotify Plans</h4>
+                <ul>
+                    <li>Premium Individual</li>
+                    <li>Premium Duo</li>
+                    <li>Premium Family</li>
+                    <li>Premium Student</li>
+                    <li>Spotify Free</li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><img src="images/insta-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter-icon-blue.png" alt="Twitter"></a>
+                <a href="#"><img src="images/fb-icon.png" alt="Facebook"></a>
+            </div>
+        </div>
+
+
+
+
         </div>
 
     </div>
@@ -324,7 +393,14 @@
     <script src="https://kit.fontawesome.com/ef9a692198.js" crossorigin="anonymous"></script>
 </body>
 
+<footer>
+    <div class="footer-content">
+        <span class="trademark">© 2025 Spotify AB</span>
+    </div>
+</footer>
+
 </html>
 
-<script src="js/songsPlayer.js"></script>
-<script src="js\welcome.js"></script>
+<script type="module" src="js\songsPlayer.js"></script>
+<script type="module" src="js\welcome.js"></script>
+<script type="module" src="js\songsCollection.js"></script>

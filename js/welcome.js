@@ -8,7 +8,10 @@ function displayWelcomeMessage() {
     loginBtn.style.display = 'none';
     bottomMessage.style.display = 'none';
     welcomeMessage.style.display = 'block';
+    document.getElementById('authSection').style.display = 'none';
+    document.getElementById('playerSection').style.display = 'block';
 }
+
 
 signUpBtn.addEventListener('click', displayWelcomeMessage);
 loginBtn.addEventListener('click', displayWelcomeMessage);
